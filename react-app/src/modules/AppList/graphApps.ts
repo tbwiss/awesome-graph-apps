@@ -49,7 +49,6 @@ export const neo4jApps: GraphAppItem[] = [
       github: 'https://github.com/neo4j-devtools/neo4j-browser',
       feedback: 'https://neo4j-browser.canny.io/feature-requests',
       changelog: 'https://neo4j-browser.canny.io/changelog',
-
     }
   },
   {
@@ -78,6 +77,23 @@ export const neo4jApps: GraphAppItem[] = [
     links: {
       changelog: 'https://neo4j-data-importer.canny.io/changelog',
       feedback: 'https://neo4j-data-importer.canny.io/feature-requests',
+    }
+  },
+  {
+    id: 'neo4j-graphql-toolbox',
+    name: 'Neo4j GraphQL Toolbox',
+    baseUrl: '$appUrlProtocol://graphql-toolbox.neo4j.io?connectURL=$protocol${colonSlash}$username${at}$hostname${colon}$port&db=$database', // TODO: need to merge https://github.com/neo4j/graphql/pull/1547 
+    unsecureBaseUrl: '$appUrlProtocol://graphql-toolbox.graphapp.io?connectURL=$protocol${colonSlash}$username${at}$hostname${colon}$port&db=$database',
+    author: 'Neo4j, Inc',
+    description: 'Developer UI for Neo4j GraphQL',
+    logo: dataImporterLogo,  // TODO: fix a logo
+    links: {
+      docs: 'https://neo4j.com/docs/graphql-manual/current/',
+      twitter: 'https://twitter.com/neo4j',
+      homepage: 'https://neo4j.com/product/graphql-library/',
+      github: 'https://github.com/neo4j/graphql',
+      feedback: 'https://feedback.neo4j.com/graphql',
+      changelog: 'https://github.com/neo4j/graphql/releases',
     }
   },
 ]
