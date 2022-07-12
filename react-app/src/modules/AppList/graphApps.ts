@@ -82,8 +82,7 @@ export const neo4jApps: GraphAppItem[] = [
   {
     id: 'neo4j-graphql-toolbox',
     name: 'Neo4j GraphQL Toolbox',
-    baseUrl: '$appUrlProtocol://graphql-toolbox.neo4j.io?connectURL=$protocol${colonSlash}$username${at}$hostname${colon}$port&db=$database', // TODO: need to merge https://github.com/neo4j/graphql/pull/1547 
-    unsecureBaseUrl: '$appUrlProtocol://graphql-toolbox.graphapp.io?connectURL=$protocol${colonSlash}$username${at}$hostname${colon}$port&db=$database',
+    baseUrl: '$appUrlProtocol://graphql-toolbox.neo4j.io?connectURL=$protocol${colonSlash}$username${at}$hostname${colon}$port&db=$database',
     author: 'Neo4j, Inc',
     description: 'Developer UI for Neo4j GraphQL',
     logo: dataImporterLogo,  // TODO: fix a logo
